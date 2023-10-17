@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let user = {
+        //     apple: "apple", //string datatype
+        //     age: 30        //number datatype
+        // };
+
+        // // let key = prompt("What do you want to know about the user?","age");
+
+        // let key = "apple";
+
+        // alert(user[key]);
+
+
+        // this object
+        // let user = {
+        //     apple: "apple", //string datatype
+        //     age: 30,        //number datatype
+
+        //     sayHi(){
+        //     alert(this.apple);
+        //     alert(this.age);
+        //          }
+        // };
+
+        // user.sayHi();
+
+        // 1. iterativev thinking: the for loop
+
+        // function pow(x, n){
+        //     let r = 1;
+           
+        //     for(let i = 0; i < n; i++){
+        //         // r = r * x;
+        //         r *=x;
+        //     }
+        //     return r; 
+        // }
+
+        // alert(pow(2, 3)); //2x2x2=8
+
+
+        // 2. recursive thinking
+        // function pow(x, n){
+        //     if(n ==1){
+        //         return x;
+        //     }else{
+        //         return x * pow(x, n-1);
+        //     }
+        // }
+        //  alert(pow(2,3));
+
+        // global object
+
+        // alert("hello");
+
+        // window.alert("Hello");
+
+        // var g = 5; 
+        // alert(window.g);
+
+        // let g = 5;
+        // alert(window.g);
+
+        window.user={
+            name:"Ali"
+        };
+        alert(user.name);
+        alert(window.user.name);
+</script>
+</body>
+</html>
