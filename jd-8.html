@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onclick="alert(`the bubling doesn't reach here`)">
+    <button onclick="event.stopPropagation()">click me</button>
+    <!-- <button id="elem" onclick="alert('Click')">AutoClick</button> 
+    <script>
+        let event = new Event("click");
+        elem.dispatchEvent(event);
+    </script> -->
+<!-- 
+    <h1 id="elem">Hello from the script!</h1>
+
+    <script>
+        document.addEventListener("hello", function(event){
+            alert("Hello From" +" " + event.target.tagName);
+        });
+
+        let event = new Event("hello", {bubbles:true});
+        elem.dispatchEvent(event);
+    </script> -->
+<!-- assignment  -->
+    <!-- <script>
+        let event = new MouseEvent("click", {
+            bubbles:true,
+            cancelable:true,
+            clientX:100,
+            clientY100
+        });
+        alert(event.clientX); //100   
+    </script> -->
+    
+
+    <!-- <div onclick="alert('The hundler!')">
+        <em>if you click on <code>EM</code>, the handler on <code>DIV</code> runs..</em>
+    </div> -->
+
+
+
+</body>
+</html>

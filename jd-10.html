@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form name="my">
+        <input name="one" value="1">
+        <input name="two" value="2">
+    </form>
+    <script>
+        let form = document.forms.my;
+        let elem = form.elements.one;
+        alert(elem.value);
+    </script> -->
+
+
+    <!-- <input type="text" onchange="alert(this.value)">
+    <input type="button" value="Button"> -->
+
+
+    <!-- <input type="text" id="input"> oninput: <span id="result">   </span>
+    <script>
+        input.oninput = function(){
+            result.innerHTML = input.value;
+        };
+    </script> -->
+
+
+    <style>
+        .invalid{border-color: red;}
+        #error{color: red;}
+    </style>
+
+    Your Email Please: <input type="email" id="input">
+    <div id="error"></div> 
+
+    <script>
+        input.onblur = function(){
+            if(!input.value.includes('@')){
+                input.classList.add('invalid');
+                error.innerHTML = 'Please enter a correct email';
+            }
+        };
+
+        input.onfocus = function(){
+            if(this.classList.contains('invalid')){
+                this.classList.remove('invalid');
+                error.innerHTML = "";
+            }
+        };
+    </script>
+</body>
+</html>

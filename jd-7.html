@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="button" value="Click Me" onclick="alert('click')"> -->
+
+
+    <!-- <script>
+        function countRabits(){
+            for(let i=1; i<=3; i++){
+                alert("Rabit Number"+ i);
+            }
+        }
+    </script>
+    <input type="button" value="Click Me" onclick="countRabits()"> -->
+    <!-- <input type="button" value="button" id="button"> -->
+    <!-- <script>
+        elem.onclick=function(){
+            alert("Thank You");
+        }
+    </script> -->
+     <!-- <script>
+        button.onclick=function(){
+            alert("Thank You");
+        }
+    </script> -->
+    <!-- <input type="button" value="Click Me" id="elem">
+    <script>
+        function handler1(){
+            alert("Thanks");
+        }
+        function handler2(){
+            alert("Thanks again");
+        }
+        elem.onclick = () => alert("Hello");
+        elem.addEventListener("click", handler1);
+        elem.addEventListener("click", handler2);
+    </script> -->
+
+<!-- 
+    <button id="elem">Click</button>
+    <script>
+        let obj= {
+            handleEvent(event){
+                alert(event.type + "at" + event.currentTarget);
+            }
+        };
+        elem.addEventListener('click',obj);
+    </script> -->
+
+
+<!-- <button id="elem">Click</button>
+
+<script>
+    class Menu {
+        handleEvent(event){
+            switch(event.type){
+                case 'mousedown':
+                    elem.innerHTML = "Mouse Button Pressed";
+                    break;
+                case 'mouseup':
+                    elem.innerHTML = "....and released";
+                    break;
+            }
+        }
+    }
+    let menu = new Menu();
+
+    elem.addEventListener('mousedown', menu);
+    elem.addEventListener('mouseup', menu);
+</script> -->
+
+
+
+
+<button id="elem">Click</button>
+
+<script>
+    class Menu {
+        handleEvent(event){
+            let method = 'on' + event.type[0].toUpperCase()+event.type.slice(1);
+            this[method](event);
+        }
+
+        onMouseDown(){
+            elem.innerHTML = "Mouse Button Pressed";
+        }
+        onMouseUp(){
+            elem.innerHTML += "....and released"; 
+        }
+    }
+    let menu = new Menu();
+
+    elem.addEventListener('mousedown', menu);
+    elem.addEventListener('mouseup', menu);
+</script>
+</body>
+</html>

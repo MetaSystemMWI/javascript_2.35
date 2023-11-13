@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="button">Alt+Shift+Click on me!</button>
+    <script>
+        button.onclick = function(event){
+            if(event.altKey && event.shiftKey){
+                alert("Hello JS Mouse Event");
+            }
+        }
+    </script> -->
+
+    <!-- <input onmousemove="this.value=event.clientX+':'+event.clientY" value="Mouse ove me"> -->
+
+    <!-- <span ondblclick="alert('Double click')">Double Click me</span> -->
+
+
+    <script>
+        function checkPhoneKey(Key){
+            return (Key >= '0' && Key <= '9') ||
+             ['+','(',')','-','ArrowLft','ArrowRight','Delete','Backspace'].includes(Key);
+        }
+    </script>
+    <input onkeydown="return checkPhoneKey(event.Key)" placeholder="Phone, Please" type="tel">
+</body>
+</html>

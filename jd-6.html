@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        body{
+            color: red;
+            margin: 5px;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <script> -->
+        <!-- // document.body.style.margin='20px';
+        // alert( document.body.style.marginTop);
+        // let c = getComputedStyle(document.body);
+        // alert(c.color); -->
+    <!-- </script> -->
+
+
+    <!-- <main style="position: relative;" id="main">
+        <article>
+            <div id="exm" style="position: absolute; left: 180px; top: 180px;">JS</div>
+        </article>
+    </main>
+
+    <script>
+        alert(exm.offsetParent.id);
+        alert(exm.offsetParent);
+        alert(exm.offsetTop);
+
+    </script> -->
+
+    <div></div>
+    <script>
+        // alert(window.innerWidth)
+        // alert(window.innerHeight)
+        // let s = Math.max(
+        //     document.body.scrollHeight, document.documentElement.scrollHeight,
+        //     document.body.offsetHeight, document.documentElement.offsetHeight,
+        //     document.body.clientHeight, document.documentElement.clientHeight
+        // );
+        // alert(s);
+
+        // let x = document.documentElement.clientWidth/2;
+        // let y = document.documentElement.clientHeight/2;
+        // let el = document.elementFromPoint(x, y);
+        // el.style.background="red";
+        // alert(el.tagName);
+
+
+        function createMessageUnde(elem, html){
+            let msg = document.createElement('div');
+            msg.style.cssText = "position:absolute; color:red";
+
+            let coords = getCoords(elem);
+
+            msg.style.left=coords.left+"px";
+            msg.style.top=coords.top+"px";
+
+            msg.innerHTML = html;
+            return msg;
+        }
+        // alert(createMessageUnde())
+       
+
+    </script>
+</body>
+</html>
